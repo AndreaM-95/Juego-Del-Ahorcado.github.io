@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Juego del Ahorcado</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" href="styles.css" >
+    </head>
+    
+    <body id="cuerpo">
+        
+        <section>
+            <video src="multimedia/fondo.mp4" autoplay="true" muted="true" loop="true"></video>
+        </section>
+
+        <header>         
+            <img src="multimedia/Vector.png" class="imagen" alt="Logo AluraLatam" height="40px"/>
+            <h1 id="titulo">Juego del Ahorcado</h1>
+        </header>
+
+        <section class="caja1">
+            <a href="juego.html">
+                <button id="iniciar">Iniciar Juego</button>
+            </a>
+            <a href="palabra_nueva.html">
+                <button id="agregar">Agregar Palabra</button>
+            </a>
+        </section>
+
+        <section id="sonidos">
+            <label class="anuncio">Si gustas, puedes reproducir la música de fondo</label>
+            <audio class="audio" src="multimedia/principal_fondo.mp3"controls loop="true" volumen="20%"></audio>
+        </section>
+
+        <script src="juego.js"></script>
+       
+        <footer id="pie">
+            <img src="multimedia/sonrisa.png" width="84px">
+            <p><strong>Andrea Mejia - 2022</strong> </p>
+            <p><strong>&copy Copyright</strong></p>
+        </footer>
+
+    </body>
+</html>

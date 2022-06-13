@@ -1,0 +1,223 @@
+
+/*TODO |||| CUERPO GENERAL |||*/
+
+#cuerpo {
+    margin: 0;
+    width: 1200px;
+    height: 800px;
+    min-height: 100vh;
+}
+video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height:100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/*logo Alura*/
+.imagen {
+    margin: 2% 2% 0 6%;
+}
+
+#titulo {
+    font-size: 40px;
+    padding: 1% 0 1% 0;
+    color: #6e1423;
+    margin: 0 0 0 26%;
+    display: inline;
+}
+
+#pie{
+    height:auto;
+    color: #D7334F;
+    padding: 5px 0 22px 0;
+    margin: 5% 0 0 0;
+}
+
+/*TODO |||| CODIGO REDUCIDO |||*/
+
+video, #titulo, #pie, #caja1, #caja2, .caja3 {
+    width: 100%;
+}
+
+#titulo, .caja1, #pie,.caja2, #area, #palabra_a_adivinar, #resultado, .advertencia1, .caja3, #letras button, #sonidos {
+    font-family: Macondo;
+    text-align: center;
+}
+
+.caja1, #pie, .caja2, .audio {
+    display: block;
+}
+
+#area {
+    border: none;
+    border-radius: 9px;
+    opacity: 0.5;
+}
+
+#area, #palabra_a_adivinar span, .anuncio, #pie {
+    font-size: 20px;
+}
+
+#pie, .anuncio{
+    background: #ADBBBF;
+    opacity: 0.3;
+}
+
+/* #AREA --> Espacio para escribir la nueva palabra*/
+#area {
+    width: 300px;
+    height: 100px;
+    margin: 5% 0 0 0;
+    color: black;
+    padding: 0.3rem;
+}
+
+.advertencia2 {
+    font-family: Macondo;
+    font-size: 18px;
+    padding: 1% 0 1% 0;
+    color: #D7334F;
+    margin:0;
+}
+
+main {
+    width: 60%;
+    height: 50%;
+    margin: 4% 20% 2% 20%;
+    padding: 20px;
+    background: rgba(255,255,255,.3);
+    display: flex;
+    gap: 30px; /*Esto es una especie de salto*/
+    border-radius: 5px;
+}
+
+#palabra_a_adivinar {
+    margin: 20px 0 10px 0;
+    height: 10%;
+}
+
+#resultado {
+    height: 40px;
+    font-size: 25px;
+    padding: 2px 0 2px 0;
+    background-color: #6e1423;
+    color: aqua;
+    border-radius: 5px;
+    margin: 8% 0 10% 0;
+    padding: 4px;
+}
+
+/*Mensaje advertencia*/
+.advertencia1{
+    margin: 2% 0 2% 43%;
+    width: 15%;
+    border-radius: 5px;
+    font-family: Macondo;
+    font-size: 18px;
+    padding: 1% 0 1% 0;
+    color: #480F17;
+    background: #ADBBBF;
+    opacity: 0.7;
+}
+
+.caja3{
+    display: inline;
+}
+
+#palabra_a_adivinar span { /*Espacio de los guines bajos*/
+    vertical-align: bottom;
+    border-bottom: 2px solid black; 
+    width: 30px;
+    text-align: center;
+    margin-right: 8px;
+    display: inline-block; /*Sin esta propiedad, no nos tomaría el ancho del guión*/
+}
+
+#letras {
+    margin-top: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.audio {
+    width: 10%;
+    height: 30px;
+    opacity: 0.3;
+    border-radius: 5px;
+    margin: 1% 0 0 44%;
+}
+
+.anuncio {
+    font-family: Macondo;
+    color: #6e1423;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/*TODO || TODOS LOS BOTONES ||*/
+
+#iniciar, #agregar, #guardar, #cancelar, #jugar, #parar, #nuevo {
+    font-family: Macondo;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #480F17;
+    color: white;
+    padding: 0.3rem;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+#iniciar, #agregar, #guardar { 
+    width: 200px;
+    height: 65px;
+}
+#jugar, #parar {
+    width: 100px;
+    height: 50px;
+}
+#nuevo {
+    width: 140px;
+    height: 50px;
+    padding: 0.3rem;
+}
+
+#iniciar{
+    margin: 15% 3% 15% 0 ;
+}
+#guardar {
+    margin: 5% 3% 0 0;
+}
+#cancelar {
+    width: 200px;
+    height: 65px;
+    margin: 0 0 4% 0;
+}
+#jugar {
+    margin-top: 5%;
+}
+#parar {
+    margin: 0 4% 2% 4%;
+    padding: 0.3rem;
+}
+
+/*Hace que crezca el botón*/
+#iniciar:hover, #agregar:hover,#guardar:hover,#cancelar:hover,#jugar:hover,#parar:hover,#nuevo:hover {
+    transform: scale(1.2);
+    background: #F49AA9;
+}
+
+#letras button {
+    font-size: 19px;
+    color: aqua;
+    background-color: #480F17;
+    width: 26px;
+    padding: 4px 0;
+    border-color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" href="styles.css"/>
+
+        <title>Juego del ahorcado</title>
+    </head>
+
+    <body id="cuerpo">
+
+        <section>
+            <video src="multimedia/fondo.mp4" autoplay="true" muted="true" loop="true"></video>
+        </section>
+
+        <header>
+            <img src="multimedia/Vector.png" class="imagen" alt="Logo AluraLatam" height="40px"/>
+            <h1 id="titulo">Juego del ahorcado</h1>
+        </header>
+
+        <main>
+            <img id="imagen" src="multimedia/img0.png" alt="Imágen del árbol"/>
+            
+            <div>
+                <p id="resultado"></p>
+                
+                <p id="palabra_a_adivinar"></p>
+
+                <div id="letras">
+                    <button>A</button>
+                    <button>B</button>
+                    <button>C</button>
+                    <button>D</button>
+                    <button>E</button>
+                    <button>F</button>
+                    <button>G</button>
+                    <button>H</button>
+                    <button>I</button>
+                    <button>J</button>
+                    <button>K</button>
+                    <button>L</button>
+                    <button>M</button>
+                    <button>N</button>
+                    <button>Ñ</button>
+                    <button>O</button>
+                    <button>P</button>
+                    <button>Q</button>
+                    <button>R</button>
+                    <button>S</button>
+                    <button>T</button>
+                    <button>U</button>
+                    <button>V</button>
+                    <button>W</button>
+                    <button>X</button>
+                    <button>Y</button>
+                    <button>Z</button>
+                </div>
+                <div class="caja3">
+                
+                    <button id="jugar">Iniciar</button>
+    
+                    <a href="index.html">
+                        <button id="parar">Desistir</button>
+                    </a>
+                    <a href="juego.html">
+                        <button id="nuevo">Nuevo Juego</button>
+                    </a>
+                </div>
+            </div>
+            
+        </main>
+
+        <section id="sonidos">
+            <label class="anuncio">Si gustas, puedes reproducir la música de fondo</label>
+            <audio class="audio" src="multimedia/juego_fondo.mp3"controls loop="true" volumen="20%"></audio>
+        </section>
+
+        <footer id="pie">
+            <img src="multimedia/sonrisa.png" width="84px" alt="Imágen de una sonrisa">
+            <p><strong>Andrea Mejia - 2022</strong> </p>
+            <p><strong>&copy Copyright</strong></p>
+        </footer>
+
+        <script src="juego.js"></script>
+
+    </body>
+</html>

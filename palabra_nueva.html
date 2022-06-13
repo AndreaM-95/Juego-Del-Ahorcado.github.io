@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Juego del Ahorcado</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" href="styles.css" >
+    </head>
+    
+    <body id="cuerpo">
+        
+        <section>
+            <video src="multimedia/fondo.mp4" autoplay="true" muted="true" loop="true"></video>
+        </section>
+
+        <header>         
+            <img src="multimedia/Vector.png" class="imagen" alt="Logo AluraLatam" height="40px"/>
+            <h1 id="titulo">Juego del Ahorcado</h1>
+        </header>
+        
+        <section class="caja2">
+            <input type="text" id="area" placeholder="Digite la palabra">
+            
+            <div class="advertencia1">
+                <label type="texto">&#9888; Máximo 8 letras</label>
+            </div>
+
+            <a>
+                <button id="guardar" onclick="capturar()">Guardar</button>
+            </a>
+            <a href="index.html">
+                <button id="cancelar">Iniciar</button>
+            </a>
+        </section>
+
+        <footer id="pie">
+            <img src="multimedia/sonrisa.png" width="84px">
+            <p><strong>Andrea Mejia - 2022</strong> </p>
+            <p><strong>&copy Copyright</strong></p>
+        </footer>
+
+        <script src="juego.js"></script>
+        <script src="sweetalert2.all.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    </body>
+
+</html>
